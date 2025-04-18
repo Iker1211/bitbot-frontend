@@ -16,11 +16,16 @@
             <div class="logo">
                 <span>🤖BitBot</span>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#presentacion">Acerca de</a></li>
-                <li><a href="#caracteristicas">Features</a></li>
-                <li><a href="https://github.com/TeewsPepper/bitbot" target="_blank" class="btn-github">GitHub</a></li>
+                <li><a href="#cta">Empezar</a></li>
+                <li><a href="https://github.com/TeewsPepper/bitbot" target="_blank" class="btn-github">Contribuir</a></li>
             </ul>
         </nav>
     </header>
@@ -51,19 +56,18 @@
                       BitBot
                 </h1>
                 <p class="tagline">Un asistente hecho para 1000 devs</p>
-                <a href="https://github.com/TeewsPepper/bitbot" class="btn-primary">Comenzar</a>
+                <a href="#presentacion" class="btn-primary">Comenzar</a>
             </div>
         </section>
         
   <section id="presentacion" class="about">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">¿Qué es BitBot?</h2>
-        <div class="title-underline"></div>
-      </div>
-      
+    <div class="container" id="about">      
       <div class="about-content">
         <div class="about-text">
+          <div class="section-header">
+            <h2 class="section-title" id="info-title">¿Qué es BitBot?</h2>
+            <div class="title-underline"></div>
+          </div>
           <p class="lead-text">
             BitBot es el asistente gratuito y de código abierto que potencia las comunidades 
             de desarrolladores novatos en Discord. Diseñado por programadores para acompañarte 
@@ -94,23 +98,23 @@
               y el intercambio de conocimiento.
             </p>
             
-            <div class="cta-container">
+            <!-- <div class="cta-container">
               <p class="cta-text">
                 Instala BitBot en tu servidor de Discord y convierte tu comunidad de desarrolladores 
                 en un entorno colaborativo, formativo y orientado al éxito.
               </p>
               <button class="btn-primary" style="margin: 0 auto">Instalar BitBot</button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
   </section>
-
-        <section class="cta">
+        <section class="cta" id="cta">
             <div class="container">
                 <h2>¿Listo para potenciar tu comunidad?</h2>
                 <p>Únete a los cientos de servidores que ya utilizan BitBot para mejorar la experiencia de sus desarrolladores.</p>
+                <p>Un proyecto abierto y sobre todo una oportunidad de ayudar a nuestras comunidades, aprendiendo a trabajar en equipo.</p>
                 <div class="cta-buttons">
                     <a href="https://github.com/TeewsPepper/bitbot" class="btn-primary">Instalar BitBot</a>
                     <a href="https://github.com/TeewsPepper/bitbot#contribuciones" class="btn-secondary">Contribuir</a>
@@ -131,7 +135,7 @@
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#presentacion">Acerca de</a></li>
-                        <li><a href="#caracteristicas">Features</a></li>
+                        <li><a href="#caracteristicas">Empezar</a></li>
                         <li><a href="https://github.com/TeewsPepper/bitbot">GitHub</a></li>
                     </ul>
                 </div>
@@ -141,5 +145,25 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            mobileMenuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                mobileMenuToggle.classList.toggle('active');
+            });
+
+            // Cerrar menú al hacer clic en un enlace
+            const navItems = document.querySelectorAll('.nav-links a');
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                    mobileMenuToggle.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
