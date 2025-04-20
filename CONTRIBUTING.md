@@ -1,5 +1,5 @@
 # Siguientes pasos
-- Pregúntale a chatgpt la configuración para un repositorio open source de un frontend. 
+- Preguntarle a chatgpt la configuración para un repositorio de una main page 
 
 - Cómo abrir discusiones en github
 
