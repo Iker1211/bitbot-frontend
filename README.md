@@ -6,9 +6,7 @@ Este es el repositorio para la main page de <a rel="noreferrer" target="_blank" 
 
 ## 🎯 Objetivo
 
-El objetivo principal es **agilizar la gestión de nuevos miembros** dentro de un servidor de Discord grande, asegurando que cada usuario reciba asistencia de manera rápida y eficaz.
-
-Este bot representa el **primer paso** hacia un proyecto más ambicioso que busca gestionar equipos, usuarios y permisos en una comunidad de hasta 1000 personas organizadas en grupos.
+El objetivo a largo plazo es dar una bonita cara a este maravilloso proyecto. Sea con la iniciativa de Ariel o en este presente BitBot
 
 ---
 
